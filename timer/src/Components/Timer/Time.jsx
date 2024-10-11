@@ -6,7 +6,7 @@ const Time = () => {
 
 
 
-    const [time, setTime] = useState(0); // Initial time in seconds (5 minutes)
+    const [time, setTime] = useState(300); // Initial time in seconds (5 minutes)
     const [running, setRunning] = useState(false);
     const [inputMinutes, setInputMinutes] = useState(5); // For adjusting time
     const timerRef = useRef(null);
@@ -40,7 +40,7 @@ const Time = () => {
     // Reset timer
     const resetTimer = () => {
         stopTimer();
-        setTime(0); // Reset to initial 5 minutes
+        setTime(300); // Reset to initial 5 minutes
       };
     
 
